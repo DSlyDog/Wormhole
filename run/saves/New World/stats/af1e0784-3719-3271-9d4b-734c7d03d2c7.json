@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "wormhole:wormhole_linker": 4,
+      "wormhole:wormhole_portal_frame": 9,
+      "wormhole:wormhole_portal_controller": 2,
+      "wormhole:wormhole_portal_base": 2
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 1687,
+      "minecraft:time_since_rest": 7051,
+      "minecraft:walk_one_cm": 2886,
+      "minecraft:total_world_time": 10955,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 144,
+      "minecraft:crouch_one_cm": 38,
+      "minecraft:sneak_time": 15,
+      "minecraft:play_time": 7051,
+      "minecraft:jump": 11,
+      "minecraft:time_since_death": 7051
+    }
+  },
+  "DataVersion": 4671
+}

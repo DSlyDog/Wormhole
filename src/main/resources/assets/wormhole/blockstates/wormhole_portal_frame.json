@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wormhole:block/wormhole_portal_frame"
+    }
+  }
+}

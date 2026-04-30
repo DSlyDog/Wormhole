@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wormhole:block/wormhole_portal_base_side"
+  }
+}

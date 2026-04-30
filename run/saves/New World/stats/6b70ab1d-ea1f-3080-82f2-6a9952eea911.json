@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 586,
+      "minecraft:total_world_time": 586,
+      "minecraft:play_time": 586,
+      "minecraft:time_since_death": 586
+    },
+    "minecraft:used": {
+      "wormhole:wormhole_linker": 1,
+      "wormhole:wormhole_portal_base": 1
+    }
+  },
+  "DataVersion": 4671
+}

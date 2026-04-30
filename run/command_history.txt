@@ -1,0 +1,6 @@
+/wormhole list
+/time set day
+/wormhole name Test1
+/wormhole name test2
+/time set day
+/wormhole list

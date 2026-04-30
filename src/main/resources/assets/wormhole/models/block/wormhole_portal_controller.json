@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "wormhole:block/wormhole_portal_controller_front",
+    "side": "wormhole:block/wormhole_portal_controller_side",
+    "top": "wormhole:block/wormhole_portal_controller_top"
+  }
+}

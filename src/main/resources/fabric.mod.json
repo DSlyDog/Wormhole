@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "wormhole",
+  "version": "${version}",
+
+  "name": "Wormhole",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/wormhole/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.reedwellarts.wormhole.Wormhole"],
+    "client": ["com.reedwellarts.wormhole.WormholeClient"]
+  },
+
+  "mixins": [
+    "wormhole.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "wormhole:block/wormhole_portal" },
+    "facing=south": { "model": "wormhole:block/wormhole_portal", "y": 180 },
+    "facing=east":  { "model": "wormhole:block/wormhole_portal", "y": 270 },
+    "facing=west":  { "model": "wormhole:block/wormhole_portal", "y": 90  }
+  }
+}

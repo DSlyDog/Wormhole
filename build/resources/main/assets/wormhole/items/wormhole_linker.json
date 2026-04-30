@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "wormhole:item/wormhole_linker"
+  }
+}

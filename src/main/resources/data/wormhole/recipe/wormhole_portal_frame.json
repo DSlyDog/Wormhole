@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " I ",
+    " S "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "wormhole:wormhole_portal_frame",
+    "count": 1
+  }
+}

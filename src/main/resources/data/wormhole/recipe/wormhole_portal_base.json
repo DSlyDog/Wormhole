@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    " I ",
+    " S "
+  ],
+  "key": {
+    "R": "minecraft:redstone",
+    "I": "minecraft:iron_block",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "wormhole:wormhole_portal_base",
+    "count": 1
+  }
+}

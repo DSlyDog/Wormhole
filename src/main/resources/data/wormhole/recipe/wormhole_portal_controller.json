@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " G ",
+    " P "
+  ],
+  "key": {
+    "G": "minecraft:glass_pane",
+    "P": "wormhole:wormhole_portal_base"
+  },
+  "result": {
+    "id": "wormhole:wormhole_portal_controller",
+    "count": 1
+  }
+}

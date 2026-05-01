@@ -4,3 +4,9 @@
 /wormhole name test2
 /time set day
 /wormhole list
+/gamemode survival
+/time set day
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival

@@ -19,6 +19,14 @@ public class WormholeClientNetworking {
                 )
         );
 
+        ClientPlayNetworking.registerGlobalReceiver(OpenRemoteScreenPayload.ID, (payload, context) ->
+                context.client().execute(() ->
+                        context.client().setScreen(
+                                new ControllerScreen(payload.destinationNames())
+                        )
+                )
+        );
+
         ClientPlayNetworking.registerGlobalReceiver(OpenNameScreenPayload.ID, (payload, context) ->
                 context.client().execute(() ->
                         context.client().setScreen(new NamePortalScreen(payload.basePos()))
@@ -31,7 +39,12 @@ public class WormholeClientNetworking {
         });
     }
 
-    public static void sendSelectedDestination(BlockPos controllerPos, String destinationName){
+    public static void sendSelectedDestination(BlockPos controllerPos, String destinationName, boolean isRemote){
+        if (isRemote) {
+            ClientPlayNetworking.send(new SelectDestinationRemotePayload(destinationName));
+            return;
+        }
+
         ClientPlayNetworking.send(new SelectDestinationPayload(controllerPos, destinationName));
     }
 

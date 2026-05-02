@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " G ",
+    "CP "
+  ],
+  "key": {
+    "G": "minecraft:glass_pane",
+    "C": "minecraft:copper_ingot",
+    "P": "wormhole:wormhole_linker"
+  },
+  "result": {
+    "id": "wormhole:handheld_portal",
+    "count": 1
+  }
+}

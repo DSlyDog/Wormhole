@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "wormhole:handheld_portal",
+    "wormhole:handheld_portal_battery"
+  ],
+  "result": {
+    "id": "wormhole:handheld_portal",
+    "count": 1
+  }
+}

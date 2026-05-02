@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " R ",
+    " C "
+  ],
+  "key": {
+    "S": "minecraft:string",
+    "R": "minecraft:redstone_torch",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "wormhole:handheld_portal_battery",
+    "count": 1
+  }
+}

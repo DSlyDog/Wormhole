@@ -1,6 +1,6 @@
 package com.reedwellarts.wormhole.items.blocks;
 
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.server.world.ServerWorld;

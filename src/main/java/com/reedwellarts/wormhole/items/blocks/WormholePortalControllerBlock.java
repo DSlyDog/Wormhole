@@ -1,9 +1,9 @@
 package com.reedwellarts.wormhole.items.blocks;
 
-import com.reedwellarts.wormhole.Wormhole;
-import com.reedwellarts.wormhole.items.BlockRegistrar;
+import com.reedwellarts.wormhole.registrar.BlockRegistrar;
+import com.reedwellarts.wormhole.items.blocks.BlockEntity.WormholeControllerBlockEntity;
 import com.reedwellarts.wormhole.network.OpenControllerScreenPayload;
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
@@ -57,7 +57,6 @@ public class WormholePortalControllerBlock extends Block implements BlockEntityP
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit){
-        Wormhole.LOGGER.info("controller block used");
         if (world.isClient()){
             return ActionResult.SUCCESS;
         }

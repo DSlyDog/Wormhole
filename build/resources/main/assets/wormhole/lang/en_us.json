@@ -1,7 +1,10 @@
 {
   "item.wormhole.wormhole_linker": "Wormhole Linker",
+  "item.wormhole.handheld_portal": "Handheld Portal",
+  "item.wormhole.handheld_portal_battery": "Handheld Portal Battery",
   "block.wormhole.wormhole_portal_base": "Wormhole Portal Base",
   "block.wormhole.wormhole_portal_frame": "Wormhole Portal Frame",
   "block.wormhole.wormhole_portal": "Wormhole Portal",
-  "block.wormhole.wormhole_portal_controller": "Wormhole Portal Controller"
+  "block.wormhole.wormhole_portal_controller": "Wormhole Portal Controller",
+  "block.wormhole.wormhole_portal_charger": "Handheld Portal Charger"
 }

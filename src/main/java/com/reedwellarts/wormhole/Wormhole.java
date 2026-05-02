@@ -2,10 +2,10 @@ package com.reedwellarts.wormhole;
 
 import com.reedwellarts.wormhole.command.WormholeCommands;
 import com.reedwellarts.wormhole.components.ModComponents;
-import com.reedwellarts.wormhole.items.BlockRegistrar;
-import com.reedwellarts.wormhole.items.ItemRegistrar;
+import com.reedwellarts.wormhole.registrar.BlockRegistrar;
+import com.reedwellarts.wormhole.registrar.ItemRegistrar;
 import com.reedwellarts.wormhole.network.WormholeServerNetworking;
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.server.world.ServerWorld;

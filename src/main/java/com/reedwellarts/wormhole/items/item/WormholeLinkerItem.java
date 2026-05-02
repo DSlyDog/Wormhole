@@ -1,16 +1,11 @@
 package com.reedwellarts.wormhole.items.item;
 
 import com.reedwellarts.wormhole.components.ModComponents;
-import com.reedwellarts.wormhole.items.BlockRegistrar;
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.registrar.BlockRegistrar;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 

@@ -1,15 +1,20 @@
 package com.reedwellarts.wormhole.client;
 
+import com.reedwellarts.wormhole.util.TeleportUtil;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.Element;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.widget.*;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
 public class ControllerScreen extends Screen {
 
@@ -19,11 +24,20 @@ public class ControllerScreen extends Screen {
 
     private final BlockPos controllerPos;
     private final List<String> destinations;
+    private final boolean isRemote;
 
     public ControllerScreen(BlockPos controllerPos, List<String> destinations){
         super(Text.literal("Select Destination"));
         this.controllerPos = controllerPos;
         this.destinations = destinations;
+        this.isRemote = false;
+    }
+
+    public ControllerScreen(List<String> destinations){
+        super(Text.literal("Select Destination"));
+        this.controllerPos = null;
+        this.destinations = destinations;
+        this.isRemote = true;
     }
 
     @Override
@@ -82,7 +96,7 @@ public class ControllerScreen extends Screen {
 
             public PortalEntry(String name){
                 this.button = ButtonWidget.builder(Text.literal(name), btn -> {
-                    WormholeClientNetworking.sendSelectedDestination(controllerPos, name);
+                    WormholeClientNetworking.sendSelectedDestination(controllerPos, name, isRemote);
                     close();
                 }).width(BUTTON_WIDTH).build();
                 button.setX(width / 2 - BUTTON_WIDTH / 2);

@@ -1,16 +1,11 @@
 package com.reedwellarts.wormhole.command;
 
 import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
-import com.reedwellarts.wormhole.components.ModComponents;
-import com.reedwellarts.wormhole.items.BlockRegistrar;
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.minecraft.item.ItemStack;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;

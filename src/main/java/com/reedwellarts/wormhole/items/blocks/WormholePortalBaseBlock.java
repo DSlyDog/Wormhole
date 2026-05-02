@@ -1,16 +1,15 @@
 package com.reedwellarts.wormhole.items.blocks;
 
 import com.reedwellarts.wormhole.Wormhole;
-import com.reedwellarts.wormhole.items.ItemRegistrar;
+import com.reedwellarts.wormhole.registrar.ItemRegistrar;
 import com.reedwellarts.wormhole.network.OpenNameScreenPayload;
 import com.reedwellarts.wormhole.network.WormholeServerNetworking;
-import com.reedwellarts.wormhole.portal.WormholeLinkState;
+import com.reedwellarts.wormhole.util.WormholeLinkState;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
@@ -22,7 +21,6 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 
 import java.util.Map;
 
